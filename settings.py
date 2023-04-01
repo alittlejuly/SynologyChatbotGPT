@@ -16,8 +16,8 @@ SYSTEM_PROMPT = '''你是xxx的chatGPT助手'''
 
 
 # Set maximum conversation exchanges or idle time gap to start a new conversation
-MAX_CONVERSATION_LEN = os.getenv("MAX_CON_LEN", default=10)
-MAX_TIME_GAP = os.getenv("MAX_TIME_GAP", default=15)  # minutes
+MAX_CONVERSATION_LEN = int(os.getenv("MAX_CON_LEN", default=10))
+MAX_TIME_GAP = int(os.getenv("MAX_TIME_GAP", default=15))  # minutes
 
 
 # Set temperature -- a parameter in the OpenAI API that controls the randomness of the generated text.
@@ -25,4 +25,4 @@ MAX_TIME_GAP = os.getenv("MAX_TIME_GAP", default=15)  # minutes
 # and creative outputs, while a lower value (e.g., 0.2) will produce more focused and deterministic outputs.
 # In this case, the temperature is set to 0.5, which provides a balance between creativity and determinism
 # in the generated text.
-TEMPERATURE = os.getenv("TEMPERATURE", default=0.5)
+TEMPERATURE = float(os.getenv("TEMPERATURE", default=0.5))

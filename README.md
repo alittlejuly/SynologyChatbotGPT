@@ -16,14 +16,14 @@
 | Parameter | Function |
 | ------ | ------ |
 | PORT | 应用运行端口 |
-| OPEN_API_KEY | chatGPT的API key |
-| WEBHOOK_URL | 群晖chat机器人传入URL |
-| WEBHOOK_TOKEN | 群晖chat机器人令牌 |
-| MAX_CONVERSATION_LEN | maximum conversation exchanges |
-| MAX_TIME_GAP | idle time gap to start a new conversation |
-| TEMPERATURE | a parameter in the OpenAI API that controls the randomness of the generated text. |
+| OPEN_API_KEY | `必需`chatGPT的API key |
+| WEBHOOK_URL | `必需`群晖chat机器人传入URL |
+| WEBHOOK_TOKEN | `必需`群晖chat机器人令牌 |
+| MAX_CONVERSATION_LEN | `可选`maximum conversation exchanges，默认值为10 |
+| MAX_TIME_GAP | `可选`idle time gap to start a new conversation，默认值为15（分钟) |
+| TEMPERATURE | `可选`a parameter in the OpenAI API that controls the randomness of the generated text. 默认值为0.5|
 
-*temperature -- a parameter in the OpenAI API that controls the randomness of the generated text. It is a floating-point value that ranges from 0 to 1. A higher value (e.g., 0.8) will result in more random and creative outputs, while a lower value (e.g., 0.2) will produce more focused and deterministic outputs. In this case, the temperature is set to 0.5, which provides a balance between creativity and determinism in the generated text.*
+*最后三个参数含义请参考原项目[Xueheng-Li/SynologyChatbotGPT](https://github.com/Xueheng-Li/SynologyChatbotGPT) 注释*
 
 # 群晖chat机器人配置
 

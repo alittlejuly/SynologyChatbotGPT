@@ -41,7 +41,7 @@ def process_synology_chat_message(event):
 
     # generate an instant pre-response
     # time.sleep(0.1)
-    send_back_message(user_id, "正在获取结果，请稍后...")
+    send_back_message(user_id, "正在获取结果，请稍候...")
 
     # generate and send back the proper response
     response_text, tokens_usage = generate_gpt_response(user_id, username, text)

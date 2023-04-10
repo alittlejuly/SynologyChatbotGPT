@@ -2,7 +2,7 @@
 
 # 介绍
 项目地址：[SynologyChatbotGPT](https://github.com/Jason0816/SynologyChatbotGPT)
-
+dockerhub地址：[synology-chatgpt-bot](https://hub.docker.com/r/jason0816/synology-chatgpt-bot)
 该项目Fork自[Xueheng-Li/SynologyChatbotGPT](https://github.com/Xueheng-Li/SynologyChatbotGPT) 
 
 修改如下：

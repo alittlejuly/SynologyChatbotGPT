@@ -94,14 +94,7 @@ def generate_gpt_response(user_id, username, message, max_conversation_length=MA
         messages.append({"role": role, "content": content})
 
     print(f"messages: {messages}")
-
-    response_text = ""
-    tokens_usage = ""
-    tokens_usage_template = '''---Tokens usage---
-    prompt_tokens: {prompt_tokens},
-    completion_tokens: {completion_tokens},
-    total_tokens: {total_tokens}'''
-    try:
+                              
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=messages,
